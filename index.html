@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jai Hanuman Madugula Halwa — Authentic traditional halwa from Madugula. Pure ghee halwa, dry fruits halwa, wedding bulk orders. Pan-India delivery. Call 6303424605." />
+  <meta name="keywords" content="Madugula halwa, neti halwa, bellamh halwa, telugu halwa, wedding halwa, dry fruits halwa, pure ghee halwa" />
+  <meta property="og:title" content="Jai Hanuman Madugula Halwa — Authentic Traditional Taste" />
+  <meta property="og:description" content="Pure ghee halwa from Madugula. Pan-India delivery for weddings & auspicious occasions." />
+  <title>Jai Hanuman Madugula Halwa | మాడుగుల బెల్లం హల్వా</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Sans+Telugu:wght@300;400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Sparkle Canvas -->
+  <canvas id="sparkleCanvas"></canvas>
+
+  <!-- ===== HEADER / HERO ===== -->
+  <section id="hero" class="hero-section">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <!-- Deity Silhouettes -->
+      <div class="deity-row">
+        <div class="deity-silhouette left" aria-hidden="true">
+          <svg viewBox="0 0 80 140" xmlns="http://www.w3.org/2000/svg">
+            <!-- Hanuman Silhouette Left -->
+            <ellipse cx="40" cy="22" rx="16" ry="18" fill="#FFD700" opacity="0.85"/>
+            <path d="M24 38 Q20 28 26 22 Q20 35 30 42 Z" fill="#FFD700" opacity="0.7"/>
+            <path d="M56 38 Q60 28 54 22 Q60 35 50 42 Z" fill="#FFD700" opacity="0.7"/>
+            <rect x="28" y="40" width="24" height="36" rx="8" fill="#FFD700" opacity="0.85"/>
+            <path d="M28 55 L16 70 Q14 78 20 80 L28 68 Z" fill="#FFD700" opacity="0.75"/>
+            <path d="M52 55 L64 70 Q66 78 60 80 L52 68 Z" fill="#FFD700" opacity="0.75"/>
+            <path d="M32 76 L28 110 Q30 115 36 113 L40 90 L44 113 Q50 115 52 110 L48 76 Z" fill="#FFD700" opacity="0.85"/>
+            <path d="M52 60 Q72 50 70 40 Q75 30 65 35 Q60 42 52 54 Z" fill="#FFD700" opacity="0.6"/>
+            <ellipse cx="40" cy="22" rx="10" ry="10" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.5"/>
+            <path d="M30 14 Q40 5 50 14" fill="none" stroke="#FFD700" stroke-width="1.5" opacity="0.7"/>
+          </svg>
+        </div>
+
+        <div class="hero-text-center">
+          <div class="brand-badge">🙏 OM NAMAH SHIVAYA 🙏</div>
+          <h1 class="telugu-heading shine-text">మాడుగుల బెల్లం హల్వా</h1>
+          <h2 class="english-subtitle">Jai Hanuman Madugula Halwa</h2>
+          <p class="tagline">Authentic Taste, Pure Ingredients</p>
+          <div class="divider-ornament">
+            <span>✦</span><span class="line"></span><span>✦</span>
+          </div>
+          <p class="since-text">✨ Since generations, crafted with devotion ✨</p>
+          <div class="hero-cta">
+            <a href="tel:6303424605" id="hero-call-btn" class="cta-btn cta-primary pulse-glow">
+              📞 Call Now: 6303424605
+            </a>
+            <a href="#order" id="hero-order-btn" class="cta-btn cta-secondary">
+              🛒 Order Now
+            </a>
+          </div>
+        </div>
+
+        <div class="deity-silhouette right" aria-hidden="true">
+          <svg viewBox="0 0 80 140" xmlns="http://www.w3.org/2000/svg">
+            <!-- Ganesha Silhouette Right -->
+            <ellipse cx="40" cy="22" rx="18" ry="20" fill="#FFD700" opacity="0.85"/>
+            <path d="M40 5 Q55 2 58 18 Q52 10 46 16 Z" fill="#FFD700" opacity="0.8"/>
+            <path d="M22 18 Q18 5 28 4 Q24 10 30 15 Z" fill="#FFD700" opacity="0.8"/>
+            <ellipse cx="56" cy="25" rx="12" ry="8" fill="#FFD700" opacity="0.7"/>
+            <path d="M56 30 Q70 40 65 55 Q58 40 56 33 Z" fill="#FFD700" opacity="0.7"/>
+            <rect x="26" y="42" width="28" height="38" rx="10" fill="#FFD700" opacity="0.85"/>
+            <path d="M26 58 L14 72 Q12 80 18 82 L26 70 Z" fill="#FFD700" opacity="0.75"/>
+            <path d="M54 58 L66 72 Q68 80 62 82 L54 70 Z" fill="#FFD700" opacity="0.75"/>
+            <path d="M34 80 L30 115 Q32 120 38 118 L40 95 L42 118 Q48 120 50 115 L46 80 Z" fill="#FFD700" opacity="0.85"/>
+            <circle cx="36" cy="52" r="3" fill="#1a0a00" opacity="0.5"/>
+            <circle cx="44" cy="52" r="3" fill="#1a0a00" opacity="0.5"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+
+    <div class="hero-image-overlay">
+      <img src="images/halwa_hero.png" alt="Authentic Madugula Halwa" class="hero-bg-img" />
+    </div>
+  </section>
+
+  <!-- ===== SPECIALTY CARDS ===== -->
+  <section id="specialty" class="specialty-section">
+    <div class="section-header">
+      <span class="section-tag">Our Specialties</span>
+      <h2 class="section-title">మా ప్రత్యేకతలు <span class="gold-text">— Hand Crafted</span></h2>
+      <p class="section-subtitle">Every batch made with love, pure ingredients & generations of expertise</p>
+    </div>
+
+    <div class="cards-grid">
+      <!-- Card 1 -->
+      <div class="product-card" id="card-neti">
+        <div class="card-img-wrap">
+          <img src="images/neti_halwa.png" alt="Special Neti Halwa — Pure Ghee Halwa" loading="lazy" />
+          <div class="card-badge">🏆 Best Seller</div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🍯</div>
+          <h3 class="card-title">Special Neti Halwa</h3>
+          <p class="card-sub">Pure Ghee Halwa</p>
+          <p class="card-desc">Crafted from the finest jaggery (bellam), pure desi ghee, and roasted wheat. Rich, dense, and melt-in-mouth texture that takes you back to grandmother's kitchen.</p>
+          <ul class="card-features">
+            <li>✔ 100% Pure Desi Ghee</li>
+            <li>✔ Natural Jaggery</li>
+            <li>✔ No Artificial Colors</li>
+          </ul>
+          <a href="#order" id="order-neti" class="card-btn">Order Now →</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="product-card featured" id="card-dryfruits">
+        <div class="card-img-wrap">
+          <img src="images/dry_fruits_halwa.png" alt="Premium Dry Fruits Halwa" loading="lazy" />
+          <div class="card-badge popular">⭐ Premium</div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🍇</div>
+          <h3 class="card-title">Dry Fruits Halwa</h3>
+          <p class="card-sub">Rich & Luxurious</p>
+          <p class="card-desc">Our signature halwa loaded with premium cashews, almonds, pistachios, and raisins — perfect for gifting, festivals, and special celebrations.</p>
+          <ul class="card-features">
+            <li>✔ Premium Dry Fruits</li>
+            <li>✔ Saffron Infused</li>
+            <li>✔ Gift Box Available</li>
+          </ul>
+          <a href="#order" id="order-dryfruits" class="card-btn">Order Now →</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="product-card" id="card-wedding">
+        <div class="card-img-wrap">
+          <img src="images/wedding_halwa.png" alt="Custom Wedding & Function Orders" loading="lazy" />
+          <div class="card-badge wedding">💒 Weddings</div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🌟</div>
+          <h3 class="card-title">Wedding & Function Orders</h3>
+          <p class="card-sub">Bulk Custom Orders</p>
+          <p class="card-desc">Large-scale orders for weddings, thread ceremonies, namakaran, and all auspicious occasions. Delivery across India with guaranteed freshness.</p>
+          <ul class="card-features">
+            <li>✔ Minimum 5 kg orders</li>
+            <li>✔ Pan-India Delivery</li>
+            <li>✔ Custom Packaging</li>
+          </ul>
+          <a href="#order" id="order-wedding" class="card-btn">Order Now →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section id="why-us" class="why-section">
+    <div class="why-bg-pattern" aria-hidden="true"></div>
+    <div class="section-header">
+      <span class="section-tag">Why Choose Us</span>
+      <h2 class="section-title">The <span class="gold-text">Madugula</span> Promise</h2>
+      <p class="section-subtitle">మా నాణ్యత మీకు నిజమైన నమ్మకాన్ని ఇస్తుంది</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-item" id="why-pure">
+        <div class="why-icon">🌾</div>
+        <h4>Pure Ingredients</h4>
+        <p>Locally sourced jaggery, pure ghee — no shortcuts, no compromises.</p>
+      </div>
+      <div class="why-item" id="why-preservatives">
+        <div class="why-icon">🚫</div>
+        <h4>No Preservatives</h4>
+        <p>Made fresh every batch. Zero artificial flavors or preservatives — ever.</p>
+      </div>
+      <div class="why-item" id="why-delivery">
+        <div class="why-icon">🚚</div>
+        <h4>Pan-India Delivery</h4>
+        <p>We ship carefully packed halwa across all Indian states for your special occasions.</p>
+      </div>
+      <div class="why-item" id="why-wedding">
+        <div class="why-icon">💍</div>
+        <h4>Wedding Bulk Orders</h4>
+        <p>Reliable bulk supplies for weddings, housewarming, and religious functions.</p>
+      </div>
+      <div class="why-item" id="why-fresh">
+        <div class="why-icon">⏰</div>
+        <h4>Made Fresh to Order</h4>
+        <p>Every kg prepared fresh upon your order — no stale pre-packed batches.</p>
+      </div>
+      <div class="why-item" id="why-trust">
+        <div class="why-icon">🙏</div>
+        <h4>Trusted Generations</h4>
+        <p>A family recipe passed down through generations with pride and devotion.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DELIVERY & ORDER ===== -->
+  <section id="order" class="order-section">
+    <div class="order-card">
+      <div class="order-card-glow"></div>
+      <div class="om-badge">🕉️</div>
+      <h2 class="order-title">ఆర్డర్ చేయండి — Order Across India</h2>
+      <p class="order-desc">We deliver across India for weddings, auspicious occasions & bulk orders. Pack sizes from <strong>500g to 50kg</strong>. Contact us directly on <strong>PhonePe or call</strong> to place your order.</p>
+
+      <div class="delivery-badges">
+        <span class="delivery-badge">📦 Secure Packing</span>
+        <span class="delivery-badge">🛡️ Freshness Guaranteed</span>
+        <span class="delivery-badge">🇮🇳 All India Delivery</span>
+      </div>
+
+      <div class="contact-buttons">
+        <a href="tel:6303424605" id="call-now-main" class="cta-btn cta-primary pulse-glow large-btn">
+          📞 Call Now: 6303424605
+        </a>
+        <a href="https://wa.me/916303424605?text=Hello%2C%20I%20want%20to%20order%20Madugula%20Halwa" id="whatsapp-btn" target="_blank" rel="noopener" class="cta-btn whatsapp-btn large-btn">
+          💬 WhatsApp Order
+        </a>
+      </div>
+
+      <div class="phonepe-section">
+        <div class="phonepe-badge" id="phonepe-badge">
+          <div class="phonepe-icon">
+            <svg width="32" height="32" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <rect width="100" height="100" rx="20" fill="#5f259f"/>
+              <text x="50" y="68" text-anchor="middle" font-size="52" fill="white" font-family="Arial" font-weight="bold">P</text>
+            </svg>
+          </div>
+          <div class="phonepe-text">
+            <span class="phonepe-label">Pay via PhonePe</span>
+            <span class="phonepe-number">6303424605</span>
+          </div>
+          <div class="phonepe-verified">✓ Verified</div>
+        </div>
+        <p class="upi-note">Also accepts GPay, Paytm & all UPI apps</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="section-header">
+      <span class="section-tag">Customer Love</span>
+      <h2 class="section-title">వారు ఏమి అంటున్నారు — <span class="gold-text">Reviews</span></h2>
+    </div>
+
+    <div class="testimonial-grid">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card" id="review-1">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <div class="review-quote">"</div>
+        <p class="review-text-telugu">మాడుగుల హల్వా తిన్నప్పుడు నేను మా అమ్మమ్మ చేతి వంట గుర్తొచ్చింది! నిజంగా స్వచ్ఛమైన నెయ్యి వాసన అద్భుతంగా ఉంటుంది.</p>
+        <p class="review-text-english">"When I tasted Madugula Halwa, I was reminded of my grandmother's cooking! The pure ghee fragrance is just magical."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">S</div>
+          <div class="reviewer-info">
+            <strong>Sravanthi Devi</strong>
+            <span>Vijayawada, AP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card featured-review" id="review-2">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <div class="review-quote">"</div>
+        <p class="review-text-telugu">మా అబ్బాయి పెళ్ళికి 30 కిలోల ఆర్డర్ ఇచ్చాం. సమయానికి వచ్చింది, నాణ్యత అద్భుతంగా ఉంది. అందరూ హల్వా గురించి అడిగారు!</p>
+        <p class="review-text-english">"Ordered 30 kg for my son's wedding. It arrived on time and the quality was exceptional. All our guests kept asking about the halwa!"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar" style="background: linear-gradient(135deg, #FF8C00, #FFD700);">R</div>
+          <div class="reviewer-info">
+            <strong>Ramaiah Naidu</strong>
+            <span>Hyderabad, Telangana</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card" id="review-3">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <div class="review-quote">"</div>
+        <p class="review-text-telugu">డ్రై ఫ్రూట్స్ హల్వా మా ఇంట్లో అందరికీ చాలా ఇష్టం. బెంగళూరు నుండి ఆర్డర్ చేశాను, రెండు రోజుల్లో వచ్చింది, ఫ్రెష్‌గా ఉంది!</p>
+        <p class="review-text-english">"The Dry Fruits Halwa is everyone's favorite at home. Ordered from Bangalore, received in two days, perfectly fresh!"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar" style="background: linear-gradient(135deg, #8B0000, #FF4500);">L</div>
+          <div class="reviewer-info">
+            <strong>Lakshmi Prasanna</strong>
+            <span>Bengaluru, Karnataka</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer" class="site-footer">
+    <div class="footer-glow" aria-hidden="true"></div>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3 class="footer-logo">🙏 Jai Hanuman Madugula Halwa</h3>
+        <p class="footer-telugu">మాడుగుల బెల్లం హల్వా — Since Generations</p>
+        <div class="footer-stars">⭐⭐⭐⭐⭐</div>
+        <p class="footer-tagline">Pure. Authentic. Devotional.</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="#specialty">Our Products</a>
+          <a href="#why-us">Why Choose Us</a>
+          <a href="#order">Order Now</a>
+          <a href="#testimonials">Reviews</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <a href="tel:6303424605" id="footer-call">📞 6303424605</a>
+          <a href="https://wa.me/916303424605" target="_blank" rel="noopener" id="footer-whatsapp">💬 WhatsApp</a>
+          <span>📍 Madugula, Andhra Pradesh</span>
+          <span>🏪 H.O.: Madugula</span>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" id="footer-instagram">
+            <span class="insta-icon">📸</span> Instagram<br/>
+            <small>Jai Hanuman Madugula Halwa</small>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 Jai Hanuman Madugula Halwa. All Rights Reserved. | Made with 🙏 in Madugula</p>
+    </div>
+  </footer>
+
+  <!-- Floating Call Button (Mobile) -->
+  <a href="tel:6303424605" id="floating-call" class="floating-cta" aria-label="Call Now">
+    📞
+    <span>Call Now</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
