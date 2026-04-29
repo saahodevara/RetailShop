@@ -132,12 +132,25 @@ body {
   width: 100%;
   height: auto;
   display: block;
-  /* Make image appear as a golden silhouette */
+  /* 
+    1. brightness(0): turn entire image (incl. background) to black
+    2. invert(1): flip to white
+    3. sepia+saturate+hue-rotate: shift to gold
+    4. drop-shadow: golden glow
+    Result: a clean gold silhouette — background becomes gold too,
+    but mix-blend-mode: multiply on parent makes gold-on-dark = gold visible,
+    white areas disappear into dark background
+  */
   filter:
-    brightness(0) saturate(100%)
-    invert(80%) sepia(100%) saturate(500%) hue-rotate(5deg) brightness(1.1)
-    drop-shadow(0 0 16px rgba(255,215,0,0.7));
-  opacity: 0.9;
+    brightness(0)
+    invert(1)
+    sepia(1)
+    saturate(4)
+    hue-rotate(5deg)
+    brightness(1.1)
+    drop-shadow(0 0 16px rgba(255,215,0,0.8));
+  mix-blend-mode: screen;
+  opacity: 0.88;
 }
 .deity-silhouette.right { animation-delay: 1s; }
 @keyframes floatDeity {
