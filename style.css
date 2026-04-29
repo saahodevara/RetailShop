@@ -132,19 +132,9 @@ body {
   width: 100%;
   height: auto;
   display: block;
-  /*
-    mix-blend-mode: multiply makes white pixels invisible on dark backgrounds:
-    white(255) × dark_bg / 255 = dark_bg → white disappears
-    colored deity pixels remain visible with golden enhancement
-  */
-  mix-blend-mode: multiply;
-  filter:
-    sepia(0.4)
-    saturate(1.8)
-    hue-rotate(-10deg)
-    brightness(0.95)
-    drop-shadow(0 0 18px rgba(255,215,0,0.7));
-  opacity: 1;
+  /* Transparent PNG — just add golden glow */
+  filter: drop-shadow(0 0 18px rgba(255,215,0,0.75));
+  opacity: 0.92;
 }
 .deity-silhouette.right { animation-delay: 1s; }
 @keyframes floatDeity {
